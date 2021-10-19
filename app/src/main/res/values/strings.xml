@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">dswap</string>
+    <string name="d">D</string>
+    <string name="swab">Swab</string>
+    <string name="start">GET STARTED</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
