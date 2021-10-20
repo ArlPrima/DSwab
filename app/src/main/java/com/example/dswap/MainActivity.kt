@@ -17,15 +17,17 @@ class MainActivity : AppCompatActivity() {
         listOf(
             introSlide(
                 "Wear a Mask",
-            "Lorem ipsum dolor sit amet,  lacus, maecenas odio ac.",
+            "Use your mask anywhere and anytime you go out",
                 R.drawable.undraw_social_distancing_2g0u_1
             ),introSlide(
                 "Hand Wash & Sanitize",
-                "Lorem ipsum dolor sit amet,  lacus, maecenas odio ac.",
+                "Always wash and sanitize your hand before \n" +
+                        "you do some activities",
                 R.drawable.undraw_wash_hands_nwl2_1
             ),introSlide(
                 "Pyshical Distancing",
-                "Lorem ipsum dolor sit amet, ",
+                "Don’t forget to avoid close contact and \n" +
+                        "do the physical distancing ",
                 R.drawable.undraw_medical_care_movn_1
             )
         )
