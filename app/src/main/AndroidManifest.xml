@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Dswap">
         <activity
+            android:name=".History"
+            android:exported="true" />
+        <activity
+            android:name=".reservation"
+            android:exported="true" />
+        <activity
             android:name=".detail"
             android:exported="true" />
         <activity

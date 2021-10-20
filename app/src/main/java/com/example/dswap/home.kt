@@ -13,12 +13,14 @@ class home : AppCompatActivity() {
         setContentView(R.layout.activity_home)
         val home     = homeFragment()
         val symtomps = SymptomsFragment()
+        val payment  = PaymentFragment()
         val help     = HelpFragment()
-        val navbtn = findViewById(R.id.bottomNavigationView) as BottomNavigationView
+        val navbtn   = findViewById(R.id.bottomNavigationView) as BottomNavigationView
         CurrentFragmentSet(home)
         navbtn.setOnNavigationItemSelectedListener {
             when(it.itemId){
                 R.id.home -> CurrentFragmentSet(home)
+                R.id.payment -> CurrentFragmentSet(payment)
                 R.id.symptoms -> CurrentFragmentSet(symtomps)
                 R.id.help -> CurrentFragmentSet(help)
             }

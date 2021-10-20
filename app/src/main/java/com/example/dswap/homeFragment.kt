@@ -1,5 +1,6 @@
 package com.example.dswap
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -27,7 +28,21 @@ class homeFragment : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        //logic yang sama kyk Activity biasa di sini
         super.onViewCreated(view, savedInstanceState)
+        var resevation : Button = view.findViewById(R.id.btnresevation)
+        var history    : Button = view.findViewById(R.id.history)
+
+        resevation.setOnClickListener{
+            var nginten = Intent(getActivity(),reservation::class.java)
+            startActivity(nginten)
+        }
+
+        history.setOnClickListener{
+            var nginten = Intent(getActivity(),History::class.java)
+            startActivity(nginten)
+        }
+
     }
 
 
