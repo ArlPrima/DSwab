@@ -16,7 +16,6 @@ class home : AppCompatActivity() {
         val help     = HelpFragment()
         val navbtn = findViewById(R.id.bottomNavigationView) as BottomNavigationView
         CurrentFragmentSet(home)
-
         navbtn.setOnNavigationItemSelectedListener {
             when(it.itemId){
                 R.id.home -> CurrentFragmentSet(home)
@@ -33,6 +32,7 @@ class home : AppCompatActivity() {
         supportFragmentManager.beginTransaction().apply {
             replace(R.id.flFragment, fragment)
             commit()
+
         }
     }
 }
