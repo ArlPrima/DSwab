@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailFragment">
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:background="@drawable/bg_header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="32dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/logo"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="Detail"
+        android:textColor="#FFFFFF"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintStart_toEndOf="@+id/logo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.571" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:text="Please fill the data below carefully"
+        android:textColor="#000000"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <EditText
+        android:id="@+id/dataKeluarga"
+        android:layout_width="339dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/bg_input"
+        android:drawableStart="@drawable/ic_baseline_account_circle_24"
+        android:drawablePadding="10dp"
+        android:hint="Data Keluarga"
+        android:inputType="text"
+        android:paddingLeft="16dp"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/Nik"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/bg_input"
+        android:drawableStart="@drawable/ic_nik"
+        android:drawablePadding="10dp"
+        android:hint="NIK"
+        android:inputType="text"
+        android:paddingLeft="16dp"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="@+id/dataKeluarga"
+        app:layout_constraintStart_toStartOf="@+id/dataKeluarga"
+        app:layout_constraintTop_toBottomOf="@+id/dataKeluarga" />
+
+    <EditText
+        android:id="@+id/jenisTes"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/bg_input"
+        android:drawableStart="@drawable/ic_jenistes"
+        android:drawablePadding="10dp"
+        android:hint="Jenis Tes"
+        android:inputType="text"
+        android:paddingLeft="16dp"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="@+id/Nik"
+        app:layout_constraintStart_toStartOf="@+id/Nik"
+        app:layout_constraintTop_toBottomOf="@+id/Nik" />
+
+    <EditText
+        android:id="@+id/tanggalTes"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/bg_input"
+        android:drawableStart="@drawable/ic_date"
+        android:drawablePadding="10dp"
+        android:hint="Tanggal Tes"
+        android:inputType="datetime"
+        android:paddingLeft="16dp"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="@+id/jenisTes"
+        app:layout_constraintStart_toStartOf="@+id/jenisTes"
+        app:layout_constraintTop_toBottomOf="@+id/jenisTes" />
+
+    <EditText
+        android:id="@+id/alamatTes"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="36dp"
+        android:background="@drawable/bg_input"
+        android:drawableStart="@drawable/ic_map"
+        android:drawablePadding="10dp"
+        android:hint="Alamat Tes"
+        android:inputType="phone"
+        android:paddingLeft="16dp"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tanggalTes" />
+
+    <EditText
+        android:id="@+id/klinik"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="36dp"
+        android:background="@drawable/bg_input"
+        android:drawableStart="@drawable/ic_hospital"
+        android:drawablePadding="10dp"
+        android:hint="Pilihan Klinik Kesehatan"
+        android:inputType="text"
+        android:paddingLeft="16dp"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alamatTes" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnNext"
+        android:layout_width="310dp"
+        android:layout_height="41dp"
+        android:layout_marginBottom="110dp"
+        android:background="@drawable/btn_primary"
+        android:text="Next"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/klinik"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
