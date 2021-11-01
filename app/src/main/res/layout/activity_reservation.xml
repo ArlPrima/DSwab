@@ -8,17 +8,17 @@
     tools:context=".home">
 
     <FrameLayout
-        android:id="@+id/flFragment"
+        android:id="@+id/flFragment2"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationViewRegist"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomNavigationView"
+        android:id="@+id/bottomNavigationViewRegist"
         android:background="@drawable/bottom_nav_rounded"
         android:layout_width="match_parent"
         android:layout_height="60dp"

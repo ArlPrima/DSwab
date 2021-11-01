@@ -17,13 +17,16 @@
         app:layout_constraintTop_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/logo"
+    <com.google.android.material.button.MaterialButton
+        style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
         android:layout_width="32dp"
         android:layout_height="37dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
-        android:src="@drawable/logo"
+        android:layout_marginTop="8dp"
+        app:icon="@drawable/vector"
+        app:iconGravity="top"
+        app:iconTint="#fff"
+        android:id="@+id/logoRegist"
         app:layout_constraintStart_toStartOf="@+id/view"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -37,7 +40,7 @@
         android:textSize="24dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/view"
-        app:layout_constraintStart_toEndOf="@+id/logo"
+        app:layout_constraintStart_toEndOf="@+id/logoRegist"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.571" />
 
@@ -58,7 +61,7 @@
         android:id="@+id/namaLengkap"
         android:layout_width="339dp"
         android:layout_height="50dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/bg_input"
         android:drawableStart="@drawable/ic_baseline_account_circle_24"
         android:drawablePadding="10dp"
@@ -143,17 +146,15 @@
         android:id="@+id/btnNext"
         android:layout_width="310dp"
         android:layout_height="41dp"
-        android:layout_marginBottom="110dp"
+        android:layout_marginTop="60dp"
         android:background="@drawable/btn_primary"
         android:text="Next"
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/noTelp"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/noTelp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
