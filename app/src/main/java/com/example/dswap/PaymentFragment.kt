@@ -28,6 +28,26 @@ class PaymentFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        val icon_notif   = view.findViewById<ImageView>(R.id.notif_icon_check)
+        val btncheck     = view.findViewById<Button>(R.id.btncekpay)
+        val textpaycheck = view.findViewById<TextView>(R.id.paymentnotif)
+        val inputcek     = view.findViewById<EditText>(R.id.cek_email)
+        btncheck.setOnClickListener{
+            val cek= inputcek.text.toString()
+            if(cek==null||cek.trim()==""){
+                Toast.makeText(getActivity(), "Insert the email to check your payment", Toast.LENGTH_SHORT).show()
+                inputcek.error="input your correct email"
+            }
+            else if(cek=="overdose@gmail.com"){
+                textpaycheck.setText("Your payment have been approved")
+                icon_notif.setImageResource(R.drawable.correct_check_email)
+            }
+            else {
+                textpaycheck.setText("Email not registered.")
+                icon_notif.setImageResource(R.drawable.warning_check)
+
+            }
+        }
     }
 
 }

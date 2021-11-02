@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        supportActionBar?.hide()
+        supportActionBar?.hide()//ngilangin bar atas
         var narurto=findViewById<ViewPager2>(R.id.introSliderViewPager)//masukin variabel viewpager
          narurto.adapter = introSliderAdapter
         setupindicator()
