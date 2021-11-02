@@ -51,23 +51,40 @@
         android:drawableStart="@drawable/ic_email"
         android:drawablePadding="10dp"
         android:hint="Enter your Email"
-        android:inputType="text"
+        android:inputType="textEmailAddress"
         android:paddingLeft="16dp"
         android:textSize="14dp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView11" />
+
+
+    <TextView
+        android:id="@+id/paymentnotif"
+        android:layout_width="339dp"
+        android:layout_height="50dp"
+        android:background="@drawable/payment_check"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center"
+        android:text="check your payment using registered email"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/btncekpay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cek_email"
+        app:layout_constraintVertical_bias="0.212" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btncekpay"
         android:layout_width="337dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="97dp"
+        android:background="@drawable/checkpay_btn"
+        android:text="Check Payment"
+        android:textColor="#fff"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        android:background="@drawable/checkpay_btn"
-        android:textColor="#fff"
-        android:text="Check Payment"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cek_email" />
 
