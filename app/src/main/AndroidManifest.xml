@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Dswap">
         <activity
+            android:name=".HandwashActivity"
+            android:exported="true" />
+        <activity
             android:name=".History"
             android:exported="true" />
         <activity

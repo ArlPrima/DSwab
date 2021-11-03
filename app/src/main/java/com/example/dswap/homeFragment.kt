@@ -32,6 +32,7 @@ class homeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         var resevation : Button = view.findViewById(R.id.btnresevation)
         var history    : Button = view.findViewById(R.id.history)
+        var btnhand    : Button = view.findViewById(R.id.btnHandWash)
 
         resevation.setOnClickListener{
             var nginten = Intent(getActivity(),reservation::class.java)
@@ -43,6 +44,10 @@ class homeFragment : Fragment() {
             startActivity(nginten)
         }
 
+        btnhand.setOnClickListener({
+            var nginten = Intent(getActivity(),HandwashActivity::class.java)
+            startActivity(nginten)
+        })
     }
 
 
