@@ -1,0 +1,2 @@
+com/example/dswab_detail/BuildConfig.java
+ com.example.dswab_detail.BuildConfig
