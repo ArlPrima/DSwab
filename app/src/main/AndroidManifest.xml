@@ -18,12 +18,7 @@
         <activity
             android:name=".reservation"
             android:exported="true" />
-        <activity
-            android:name=".detail"
-            android:exported="true" />
-        <activity
-            android:name=".registration"
-            android:exported="true" />
+
         <activity
             android:name=".SplashScreenActivity"
             android:exported="true">

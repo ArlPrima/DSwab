@@ -19,6 +19,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/logoDetail"
         style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
         android:layout_width="32dp"
         android:layout_height="37dp"
@@ -27,7 +28,6 @@
         app:icon="@drawable/vector"
         app:iconGravity="top"
         app:iconTint="#fff"
-        android:id="@+id/logoDetail"
         app:layout_constraintStart_toStartOf="@+id/view"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -128,9 +128,7 @@
         android:id="@+id/alamatTes"
         android:layout_width="0dp"
         android:layout_height="50dp"
-        android:layout_marginStart="36dp"
         android:layout_marginTop="24dp"
-        android:layout_marginEnd="36dp"
         android:background="@drawable/bg_input"
         android:drawableStart="@drawable/ic_map"
         android:drawablePadding="10dp"
@@ -138,27 +136,51 @@
         android:inputType="phone"
         android:paddingLeft="16dp"
         android:textSize="14dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tanggalTes"
+        app:layout_constraintStart_toStartOf="@+id/tanggalTes"
         app:layout_constraintTop_toBottomOf="@+id/tanggalTes" />
 
-    <EditText
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/klinik"
+       style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
         android:layout_width="0dp"
         android:layout_height="50dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="36dp"
+        android:layout_marginTop="15dp"
+        app:boxBackgroundColor="#B3ECE5"
         android:background="@drawable/bg_input"
-        android:drawableStart="@drawable/ic_hospital"
-        android:drawablePadding="10dp"
-        android:hint="Pilihan Klinik Kesehatan"
-        android:inputType="text"
-        android:paddingLeft="16dp"
-        android:textSize="14dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/alamatTes" />
+        app:layout_constraintHorizontal_bias="0.5"
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxStrokeColor="@null"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
+        app:layout_constraintEnd_toEndOf="@+id/alamatTes"
+        app:layout_constraintStart_toStartOf="@+id/alamatTes"
+        app:layout_constraintTop_toBottomOf="@+id/alamatTes"
+        app:startIconDrawable="@drawable/ic_hospital">
+
+        <AutoCompleteTextView
+            android:id="@+id/klinikInput"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:inputType="none"
+            android:ellipsize="end"
+            android:text="health clinic options"
+            android:textSize="14dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:dropDownSelector="@drawable/bg_input"
+            android:singleLine="true"
+            tools:ignore="LabelFor"
+            android:textAlignment="viewStart"
+            />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnNext"
@@ -173,6 +195,8 @@
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/klinik" />
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

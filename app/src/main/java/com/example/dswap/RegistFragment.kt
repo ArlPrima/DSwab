@@ -7,6 +7,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.EditText
+import android.widget.Toast
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -20,10 +22,17 @@ class RegistFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         var logoRegist : Button = view.findViewById(R.id.logoRegist)
-
+        var btnnextregis : Button = view.findViewById(R.id.btnNext)
+        var emailRegist  : EditText = view.findViewById(R.id.email)
         logoRegist.setOnClickListener{
-            var ngintenRegist = Intent(getActivity(),home::class.java)
+            val ngintenRegist = Intent(getActivity(),home::class.java)
             startActivity(ngintenRegist)
+        }
+        btnnextregis.setOnClickListener{
+            if(!emailRegist.text.toString().contains("@")) {
+                Toast.makeText(getActivity(), "Email must be valid", Toast.LENGTH_SHORT).show()
+                emailRegist.error="input valid Email using @"
+            }
         }
     }
 

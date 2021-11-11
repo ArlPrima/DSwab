@@ -33,7 +33,7 @@
         style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
         android:layout_width="25dp"
         android:layout_height="0dp"
-        android:layout_marginStart="268dp"
+        android:layout_marginStart="266dp"
         android:layout_marginTop="12dp"
         app:icon="@drawable/arrow_forward"
         app:iconGravity="end"
@@ -134,18 +134,20 @@
         android:layout_marginStart="31dp"
         android:layout_marginTop="11dp"
         android:text="Use mask"
-        android:textSize="14sp"
+        android:textSize="13sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
 
     <TextView
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="19dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="6dp"
         android:text="Wear your mask"
-        android:textSize="12sp"
+        android:textSize="11sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
@@ -153,53 +155,53 @@
         android:id="@+id/imageView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
+        android:layout_marginStart="156dp"
         android:layout_marginTop="15dp"
         android:src="@drawable/wash"
-        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
-
-
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="49dp"
-        android:layout_marginTop="13dp"
-        android:text="Wash your hand"
-        android:textSize="14sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/textView8"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
     <TextView
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="7dp"
         android:text="Sanitize your hand"
-        android:textSize="12sp"
-        app:layout_constraintStart_toEndOf="@+id/textView9"
+        android:textSize="11sp"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="11dp"
+        android:text="Wash your hand"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
     <ImageView
         android:id="@+id/imageView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
+        android:layout_marginStart="292dp"
         android:layout_marginTop="15dp"
         android:src="@drawable/avoid"
-        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <TextView
         android:id="@+id/textView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="13dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="11dp"
         android:text="Avoid close contact"
-        android:textSize="14sp"
+        android:textSize="13sp"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/textView10"
         app:layout_constraintTop_toBottomOf="@+id/imageView5" />
@@ -208,10 +210,11 @@
         android:id="@+id/textView16"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
+        android:layout_marginStart="276dp"
+        android:layout_marginTop="7dp"
         android:text="Physical Distancing"
-        android:textSize="12sp"
-        app:layout_constraintStart_toEndOf="@+id/textView11"
+        android:textSize="11sp"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
     <ImageView
@@ -238,7 +241,7 @@
         android:id="@+id/imageView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
+        android:layout_marginStart="57dp"
         android:layout_marginTop="11dp"
         android:src="@drawable/hadnwash_3"
         app:layout_constraintStart_toEndOf="@+id/imageView7"
@@ -260,7 +263,7 @@
         android:id="@+id/textView15"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="37dp"
+        android:layout_marginStart="30dp"
         android:layout_marginTop="8dp"
         android:gravity="center"
         android:text="Rub Hands Palm to Palm"

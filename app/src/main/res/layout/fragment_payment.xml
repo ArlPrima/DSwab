@@ -44,7 +44,7 @@
 
     <EditText
         android:id="@+id/cek_email"
-        android:layout_width="339dp"
+        android:layout_width="360dp"
         android:layout_height="50dp"
         android:layout_marginTop="35dp"
         android:background="@drawable/bg_input"
@@ -62,7 +62,7 @@
 
     <TextView
         android:id="@+id/paymentnotif"
-        android:layout_width="339dp"
+        android:layout_width="360dp"
         android:layout_height="50dp"
         android:background="@drawable/payment_check"
         android:fontFamily="@font/montserrat"
@@ -92,11 +92,11 @@
         android:id="@+id/notif_icon_check"
         android:layout_width="19dp"
         android:layout_height="20dp"
-        android:layout_marginStart="48dp"
+        android:layout_marginStart="12dp"
         android:src="@drawable/ic_baseline_error_24"
         app:layout_constraintBottom_toBottomOf="@+id/paymentnotif"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/paymentnotif"
         app:layout_constraintTop_toBottomOf="@+id/cek_email"
-        app:layout_constraintVertical_bias="0.657" />
+        app:layout_constraintVertical_bias="0.641" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
