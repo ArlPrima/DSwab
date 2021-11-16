@@ -5,11 +5,13 @@
     <string name="start">GET STARTED</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
     <string-array name="RumahSakit">
         <item>RS UNAIR</item>
         <item>RSUD Dr.Soetomo</item>
         <item>RKZ surabaya</item>
     </string-array>
+
     <string-array name="JenisTes">
         <item> PCR test</item>
         <item> Antigen test</item>

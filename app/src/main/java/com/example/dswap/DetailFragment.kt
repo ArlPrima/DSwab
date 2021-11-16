@@ -1,5 +1,7 @@
 package com.example.dswap
 
+import android.annotation.SuppressLint
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -21,20 +23,28 @@ import com.google.android.material.textfield.TextInputLayout
  * create an instance of this fragment.
  */
 class DetailFragment : Fragment() {
+    @SuppressLint("ResourceType")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         var logoDetail : Button = view.findViewById(R.id.logoDetail)
         var textfield = view.findViewById<TextInputLayout>(R.id.klinik)
-//        val items = listOf("Material", "Design", "Components", "Android")// can set the list of drop down array in here
+        var textfield2 = view.findViewById<TextInputLayout>(R.id.jenisTes)
+//
+//      val items = listOf("Material", "Design", "Components", "Android")// can set the list of drop down array in here
         val rs = resources.getStringArray(R.array.RumahSakit)//using list input of dropdown in the file string in arrray name RumahSakit
-        val adapter = ArrayAdapter(requireContext(), R.layout.dropdown_rs, rs)
-        (textfield.editText as? AutoCompleteTextView)?.setAdapter(adapter)
+        val rsAdapter = ArrayAdapter(requireContext(), R.layout.dropdown_template, rs)
+        (textfield.editText as? AutoCompleteTextView)?.setAdapter(rsAdapter)
+
+        val tes = resources.getStringArray(R.array.JenisTes)
+        val tesAdapter= ArrayAdapter(requireContext(), R.layout.dropdown_template, tes)
+        (textfield2.editText as? AutoCompleteTextView)?.setAdapter(tesAdapter)
 
         logoDetail.setOnClickListener{
             var ngintenDetail = Intent(getActivity(),home::class.java)
             startActivity(ngintenDetail)
         }
     }
+
 
 
 

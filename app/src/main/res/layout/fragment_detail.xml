@@ -92,21 +92,46 @@
         app:layout_constraintStart_toStartOf="@+id/dataKeluarga"
         app:layout_constraintTop_toBottomOf="@+id/dataKeluarga" />
 
-    <EditText
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
         android:id="@+id/jenisTes"
         android:layout_width="0dp"
         android:layout_height="50dp"
-        android:layout_marginTop="24dp"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
+        android:layout_marginTop="15dp"
+        app:boxBackgroundColor="#B3ECE5"
         android:background="@drawable/bg_input"
-        android:drawableStart="@drawable/ic_jenistes"
-        android:drawablePadding="10dp"
-        android:hint="Jenis Tes"
-        android:inputType="text"
-        android:paddingLeft="16dp"
-        android:textSize="14dp"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxStrokeColor="@null"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:startIconDrawable="@drawable/ic_jenistes"
         app:layout_constraintEnd_toEndOf="@+id/Nik"
         app:layout_constraintStart_toStartOf="@+id/Nik"
-        app:layout_constraintTop_toBottomOf="@+id/Nik" />
+        app:layout_constraintTop_toBottomOf="@+id/Nik"
+        >
+
+        <AutoCompleteTextView
+            android:id="@+id/jenisTesBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:inputType="none"
+            android:ellipsize="end"
+            android:text="health clinic options"
+            android:textSize="14dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:dropDownSelector="@drawable/bg_input"
+            android:singleLine="true"
+            tools:ignore="LabelFor"
+            android:textAlignment="viewStart"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <EditText
         android:id="@+id/tanggalTes"
