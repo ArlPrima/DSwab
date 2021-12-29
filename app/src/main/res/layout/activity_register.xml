@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RegistFragment">
+    tools:context=".RegisterActivity">
 
     <View
         android:id="@+id/view"
@@ -127,12 +127,26 @@
 
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnNext"
+        android:id="@+id/btnNextRegist"
         android:layout_width="310dp"
         android:layout_height="41dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/btn_primary"
         android:text="Next"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/noTelp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnCancelRegist"
+        android:layout_width="310dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/btn_primary_cancel"
+        android:text="Cancel"
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
@@ -158,5 +172,24 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/passConfirm" />
 
-
+    <com.kofigyan.stateprogressbar.StateProgressBar
+        android:id="@+id/state_progress_bar_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCancelRegist"
+        app:spb_animateToCurrentProgressState="true"
+        app:spb_checkStateCompleted="true"
+        app:spb_currentStateDescriptionColor="#00BFA6"
+        app:spb_currentStateNumber="one"
+        app:spb_maxStateNumber="three"
+        app:spb_stateBackgroundColor="#CCCACA"
+        app:spb_stateDescriptionColor="#C1BEBE"
+        app:spb_stateForegroundColor="#00BFA6"
+        app:spb_stateNumberBackgroundColor="#1C1C1C"
+        app:spb_stateNumberForegroundColor="#eeeeee" />
 </androidx.constraintlayout.widget.ConstraintLayout>

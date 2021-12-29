@@ -32,7 +32,7 @@ class PayFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_pay, container, false)
+        return inflater.inflate(R.layout.activity_pay, container, false)
     }
 
 

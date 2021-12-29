@@ -59,14 +59,14 @@
         app:layout_constraintTop_toBottomOf="@+id/view" />
 
     <EditText
-        android:id="@+id/dataKeluarga"
+        android:id="@+id/patientName"
         android:layout_width="339dp"
         android:layout_height="50dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/bg_input"
         android:drawableStart="@drawable/ic_baseline_account_circle_24"
         android:drawablePadding="10dp"
-        android:hint="Data Keluarga"
+        android:hint="Patient name"
         android:inputType="text"
         android:paddingLeft="16dp"
         android:textSize="14dp"
@@ -79,18 +79,19 @@
         android:id="@+id/Nik"
         android:layout_width="0dp"
         android:layout_height="50dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="15dp"
         android:background="@drawable/bg_input"
         android:drawableStart="@drawable/ic_nik"
         android:drawablePadding="10dp"
         android:hint="NIK"
         android:inputType="number"
         android:paddingLeft="16dp"
+        android:maxLength="16"
         android:textSize="14dp"
-        app:layout_constraintEnd_toEndOf="@+id/dataKeluarga"
+        app:layout_constraintEnd_toEndOf="@+id/patientName"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/dataKeluarga"
-        app:layout_constraintTop_toBottomOf="@+id/dataKeluarga" />
+        app:layout_constraintStart_toStartOf="@+id/patientName"
+        app:layout_constraintTop_toBottomOf="@+id/patientName" />
 
     <com.google.android.material.textfield.TextInputLayout
         style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
@@ -122,7 +123,7 @@
             android:background="@null"
             android:inputType="none"
             android:ellipsize="end"
-            android:text="health clinic options"
+            android:text="Type Test options"
             android:textSize="14dp"
             android:paddingTop="10dp"
             android:paddingBottom="10dp"
@@ -137,7 +138,7 @@
         android:id="@+id/tanggalTes"
         android:layout_width="0dp"
         android:layout_height="50dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="15dp"
         android:background="@drawable/bg_input"
         android:drawableStart="@drawable/ic_date"
         android:drawablePadding="10dp"
@@ -153,12 +154,12 @@
         android:id="@+id/alamatTes"
         android:layout_width="0dp"
         android:layout_height="50dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="15dp"
         android:background="@drawable/bg_input"
         android:drawableStart="@drawable/ic_map"
         android:drawablePadding="10dp"
         android:hint="Alamat Tes"
-        android:inputType="phone"
+        android:inputType="text"
         android:paddingLeft="16dp"
         android:textSize="14dp"
         app:layout_constraintEnd_toEndOf="@+id/tanggalTes"
@@ -167,7 +168,7 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/klinik"
-       style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginTop="15dp"
@@ -208,12 +209,12 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnNext"
+        android:id="@+id/btnSubmitDetail"
         android:layout_width="310dp"
         android:layout_height="41dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/btn_primary"
-        android:text="Next"
+        android:text="Submit"
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
@@ -221,7 +222,40 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/klinik" />
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnCancelRegist"
+        android:layout_width="310dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/btn_primary_cancel"
+        android:text="Back"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSubmitDetail" />
 
+    <com.kofigyan.stateprogressbar.StateProgressBar
+        android:id="@+id/state_progress_bar_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
 
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCancelRegist"
+        app:spb_animateToCurrentProgressState="true"
+        app:spb_checkStateCompleted="true"
+        app:spb_currentStateDescriptionColor="#00BFA6"
+        app:spb_currentStateNumber="two"
+        app:spb_maxStateNumber="three"
+        app:spb_stateBackgroundColor="#CCCACA"
+        app:spb_stateDescriptionColor="#C1BEBE"
+        app:spb_stateForegroundColor="#00BFA6"
+        app:spb_stateNumberBackgroundColor="#1C1C1C"
+        app:spb_stateNumberForegroundColor="#eeeeee" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "653014782067",
+    "project_id": "dswap-a3b71",
+    "storage_bucket": "dswap-a3b71.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:653014782067:android:4c71cbab9605bbbfba5a06",
+        "android_client_info": {
+          "package_name": "com.example.dswap"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "653014782067-pl9egnpailcqicg6a251f37hveu00tfk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAre2Y42C9K8vaup94JqixWECwvWHYh9NQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "653014782067-pl9egnpailcqicg6a251f37hveu00tfk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
