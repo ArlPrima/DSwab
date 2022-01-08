@@ -14,6 +14,11 @@ import com.kofigyan.stateprogressbar.StateProgressBar
 
 class DetailActivity : AppCompatActivity() {
     protected var descriptionData = arrayOf("Registration", "Detail", "Payment")
+
+    companion object{
+        const val EXTRA_name = "extra_name"
+
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detail)
@@ -25,6 +30,9 @@ class DetailActivity : AppCompatActivity() {
         var datefield = findViewById<EditText>(R.id.tanggalTes)
         var AddressText = findViewById<EditText>(R.id.alamatTes)
         var textKlinik = findViewById<AutoCompleteTextView>(R.id.klinikInput)
+
+        //pass data
+        val Email = intent.getStringExtra(EXTRA_name)
 
         //button
         var submitBtn = findViewById<Button>(R.id.btnSubmitDetail)
@@ -68,13 +76,12 @@ class DetailActivity : AppCompatActivity() {
 
             val data =
                 FirebaseDatabase.getInstance("https://dswap-a3b71-default-rtdb.asia-southeast1.firebasedatabase.app/")
-                    .getReference("Patients")// bikin tabel user
+                    .getReference("Patients").child(Email.toString())// bikin tabel user
             val pasien = Patient(NamePatients, NIK, TestType, TestDate, Address, Clinic)
 
             data.child(NamePatients).setValue(pasien).addOnSuccessListener {
                 Toast.makeText(this, "data input succsess", Toast.LENGTH_SHORT).show()
             }
-
             var IntenNextToPay = Intent(this, PayActivity::class.java)
             startActivity(IntenNextToPay)
         }

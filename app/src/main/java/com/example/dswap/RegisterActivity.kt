@@ -10,8 +10,6 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.dswap.UserBackEnd.User
 import com.google.firebase.database.FirebaseDatabase
-import com.google.firebase.database.ktx.database
-import com.google.firebase.ktx.Firebase
 import com.kofigyan.stateprogressbar.StateProgressBar
 
 class RegisterActivity : AppCompatActivity() {
@@ -46,7 +44,8 @@ class RegisterActivity : AppCompatActivity() {
 
                 val Fullname = FullName.text.toString().trim()
                 val Phone = noTelp.text.toString().trim()
-                val Email = emailRegist.text.toString().trim()
+                val Email = emailRegist.text.toString().trim().replace(".",",")
+
                 val PASS = confirmPass.text.toString().trim()
 
                 val SimpanData =
@@ -54,14 +53,14 @@ class RegisterActivity : AppCompatActivity() {
                 var UserID = SimpanData.push().key
                 val user = User(UserID,Fullname, Phone, Email, PASS)
                 if (UserID != null) {
-                    SimpanData.child(UserID).setValue(user).addOnSuccessListener {
+                    SimpanData.child(Email).setValue(user).addOnSuccessListener {
                         Toast.makeText(this, "data input succsess", Toast.LENGTH_SHORT).show()
                     }.addOnFailureListener {
                         Toast.makeText(this, "data input fail", Toast.LENGTH_SHORT).show()
                     }
                 }
-
                 val Inten = Intent(this, DetailActivity::class.java)
+                Inten.putExtra(DetailActivity.EXTRA_name, Email)
                 startActivity(Inten)
             }
 

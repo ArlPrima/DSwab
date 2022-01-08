@@ -13,10 +13,16 @@ class PayActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_pay)
         var logoPay : Button = findViewById(R.id.logoPay)
+        var pay :Button = findViewById(R.id.btnPayNext)
 
         var stateprogressbarPay = findViewById<View>(R.id.state_progress_bar_id) as StateProgressBar
         stateprogressbarPay.setStateDescriptionData(descriptionData)
 
+
+        pay.setOnClickListener{
+            var IntentPayCompletea =Intent(this,home::class.java)
+            startActivity(IntentPayCompletea)
+        }
         logoPay.setOnClickListener{
             var ngintenPay = Intent(this,home::class.java)
             startActivity(ngintenPay)
