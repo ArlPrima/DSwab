@@ -3,6 +3,20 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Project/Github/DSwab/app/src/main/res/layout/activity_detail.xml" value="0.371875" />
+        <entry key="..\:/Project/Github/DSwab/app/src/main/res/layout/activity_handwash.xml" value="0.24682971014492755" />
+        <entry key="..\:/Project/Github/DSwab/app/src/main/res/layout/activity_info_pay.xml" value="0.371875" />
+        <entry key="..\:/Project/Github/DSwab/app/src/main/res/layout/activity_pay.xml" value="0.26959247648902823" />
+        <entry key="..\:/Project/Github/DSwab/app/src/main/res/layout/activity_register.xml" value="0.371875" />
+        <entry key="..\:/Project/Github/DSwab/app/src/main/res/layout/activity_reservation.xml" value="0.24682971014492755" />
+        <entry key="..\:/Project/Github/DSwab/app/src/main/res/layout/activity_splash_screen.xml" value="0.371875" />
+        <entry key="..\:/Project/Github/DSwab/app/src/main/res/layout/dropdown_template.xml" value="0.29583333333333334" />
+        <entry key="..\:/Project/Github/DSwab/app/src/main/res/layout/fragment_help.xml" value="0.29583333333333334" />
+        <entry key="..\:/Project/Github/DSwab/app/src/main/res/layout/fragment_home.xml" value="0.24682971014492755" />
+        <entry key="..\:/Project/Github/DSwab/app/src/main/res/layout/fragment_pay.xml" value="0.24682971014492755" />
+        <entry key="..\:/Project/Github/DSwab/app/src/main/res/layout/fragment_payment.xml" value="0.24682971014492755" />
+        <entry key="..\:/Project/Github/DSwab/app/src/main/res/layout/fragment_symptoms.xml" value="0.24682971014492755" />
+        <entry key="..\:/Project/Github/DSwab/app/src/main/res/layout/pay_popup.xml" value="0.371875" />
         <entry key="..\:/semester 5/pemprograman mobile/backup/DSwab/app/src/main/res/drawable-xxhdpi/border1.xml" value="0.18489583333333334" />
         <entry key="..\:/semester 5/pemprograman mobile/backup/DSwab/app/src/main/res/layout/activity_handwash.xml" value="0.1272644927536232" />
         <entry key="..\:/semester 5/pemprograman mobile/backup/DSwab/app/src/main/res/layout/activity_home.xml" value="0.16666666666666666" />

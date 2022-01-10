@@ -45,6 +45,8 @@ dependencies {
     implementation 'androidx.navigation:navigation-fragment-ktx:2.3.5'
     implementation 'androidx.navigation:navigation-ui-ktx:2.3.5'
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    //library lottie pop up
+    implementation 'com.airbnb.android:lottie:3.4.0'
 
     implementation 'com.google.firebase:firebase-firestore-ktx:24.0.0'
     testImplementation 'junit:junit:4.+'
