@@ -20,10 +20,16 @@ class PayFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         var logoPay : Button = view.findViewById(R.id.logoPay)
+        var btnPayNext : Button = view.findViewById(R.id.btnPayNext)
+
 
         logoPay.setOnClickListener{
             var ngintenPay = Intent(getActivity(),home::class.java)
             startActivity(ngintenPay)
+        }
+        btnPayNext.setOnClickListener {
+            var ngintenPayNext = Intent(getActivity(),InfoPay::class.java)
+            startActivity(ngintenPayNext)
         }
     }
 

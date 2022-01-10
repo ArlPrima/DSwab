@@ -10,14 +10,14 @@ import android.widget.Button
 import android.widget.TextView
 
 class InfoPay : AppCompatActivity() {
-    private lateinit var btnPayNext : Button
+    private lateinit var btnConfirm : Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_info_pay)
 
-        btnPayNext = findViewById(R.id.btnPayNext)
-        btnPayNext.setOnClickListener {
+        btnConfirm = findViewById(R.id.btnConfirm)
+        btnConfirm.setOnClickListener {
 
         }
     }

@@ -197,7 +197,7 @@
         app:layout_constraintStart_toEndOf="@+id/testAdress"
         app:layout_constraintTop_toBottomOf="@+id/imageView10" />
 
-    <androidx.appcompat.widget.AppCompatButton
+     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnPayNext"
         android:layout_width="310dp"
         android:layout_height="41dp"
