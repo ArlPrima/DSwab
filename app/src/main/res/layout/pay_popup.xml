@@ -37,7 +37,17 @@
                 android:padding="10dp">
             </TextView>
 
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnOK"
+                android:layout_width="310dp"
+                android:layout_height="41dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_primary"
+                android:text="Confirm"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
 
+                />
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>

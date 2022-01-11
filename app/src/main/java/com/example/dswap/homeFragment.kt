@@ -35,7 +35,7 @@ class homeFragment : Fragment() {
         var btnhand    : Button = view.findViewById(R.id.btnHandWash)
 
         resevation.setOnClickListener{
-            var nginten = Intent(getActivity(),RegisterActivity::class.java)
+            var nginten = Intent(getActivity(),PayActivity::class.java)
             startActivity(nginten)
         }
 

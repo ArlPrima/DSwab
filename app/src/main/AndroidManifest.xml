@@ -16,12 +16,7 @@
         <activity
             android:name=".InfoPay"
             android:exported="false" />
-        <activity
-            android:name=".UserBackEnd.InfoPay"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity2"
-            android:exported="true" />
+
         <activity
             android:name=".PayActivity"
             android:exported="true" />
