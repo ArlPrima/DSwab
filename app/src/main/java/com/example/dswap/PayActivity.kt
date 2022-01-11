@@ -20,7 +20,7 @@ class PayActivity : AppCompatActivity() {
 
 
         pay.setOnClickListener{
-            var IntentPayCompletea =Intent(this,home::class.java)
+            var IntentPayCompletea =Intent(this,InfoPay::class.java)
             startActivity(IntentPayCompletea)
         }
         logoPay.setOnClickListener{
