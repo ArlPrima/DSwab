@@ -16,4 +16,6 @@
         <item> PCR test</item>
         <item> Antigen test</item>
     </string-array>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="title_activity_hospital_loc">HospitalLoc</string>
 </resources>

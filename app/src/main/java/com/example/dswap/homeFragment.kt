@@ -31,16 +31,16 @@ class homeFragment : Fragment() {
         //logic yang sama kyk Activity biasa di sini
         super.onViewCreated(view, savedInstanceState)
         var resevation : Button = view.findViewById(R.id.btnresevation)
-        var history    : Button = view.findViewById(R.id.history)
+        var history    : Button = view.findViewById(R.id.hospitalLOC)
         var btnhand    : Button = view.findViewById(R.id.btnHandWash)
 
         resevation.setOnClickListener{
-            var nginten = Intent(getActivity(),PayActivity::class.java)
+            var nginten = Intent(getActivity(),RegisterActivity::class.java)
             startActivity(nginten)
         }
 
         history.setOnClickListener{
-            var nginten = Intent(getActivity(),History::class.java)
+            var nginten = Intent(getActivity(),HospitalLoc::class.java)
             startActivity(nginten)
         }
 
