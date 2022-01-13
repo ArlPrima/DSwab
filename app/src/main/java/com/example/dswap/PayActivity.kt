@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import android.widget.TextView
+import com.google.firebase.database.FirebaseDatabase
 import com.kofigyan.stateprogressbar.StateProgressBar
 
 class PayActivity : AppCompatActivity() {
@@ -14,6 +16,9 @@ class PayActivity : AppCompatActivity() {
         setContentView(R.layout.activity_pay)
         var logoPay : Button = findViewById(R.id.logoPay)
         var pay :Button = findViewById(R.id.btnPayNext)
+        var test: TextView = findViewById(R.id.TvTypeTest)
+        var alamat:TextView = findViewById(R.id.alamatPasien)
+
 
         var stateprogressbarPay = findViewById<View>(R.id.state_progress_bar_id) as StateProgressBar
         stateprogressbarPay.setStateDescriptionData(descriptionData)

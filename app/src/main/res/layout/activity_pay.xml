@@ -66,7 +66,7 @@
         app:layout_constraintTop_toTopOf="@+id/imageView" />
 
     <TextView
-        android:id="@+id/textView22"
+        android:id="@+id/TvTypeTest"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -82,8 +82,8 @@
         android:layout_marginTop="8dp"
         android:text="3 x IDR 500.000"
         android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="@+id/textView22"
-        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+        app:layout_constraintStart_toStartOf="@+id/TvTypeTest"
+        app:layout_constraintTop_toBottomOf="@+id/TvTypeTest" />
 
     <TextView
         android:id="@+id/textView24"

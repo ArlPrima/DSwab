@@ -71,7 +71,7 @@ class DetailActivity : AppCompatActivity() {
         datefield.setOnClickListener(View.OnClickListener {
             val datePickerDialog = DatePickerDialog(
                 this, android.R.style.
-                    Theme_Holo_Light_Dialog_MinWidth,
+                Theme_Holo_Light_Dialog_MinWidth,
 
                 onDateSetListener, year, month, day
             )
