@@ -16,4 +16,4 @@ Splash view -> onboarding -> Home : -> reservasi  (Intent) -> registration view 
                                     -> history (change to be map) view (Intent) -> activity hospitalloc yang akan menampilkan lokasi dari rumah sakit yang dapat dipesan karena                                        telah bekerjasama dengan aplikasi
                                     
 Alur back end   
-menggunakan no sql dari API firebase 
+menggunakan  API firebase dengan basis no sql 
